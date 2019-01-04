@@ -74,7 +74,7 @@ To determine the best values for α and γ a grid search over a combination of t
 
 The three values explored for the learning rate α were 0.01, 0.001, and 0.0001. A more exhaustive search through possible values would have undoubtedly led to a finer tuned learning rate, but the time limitation didn't allow it. These three values should allow for proper exploration of how the learning rate affects the convergence of the agent during training.
 
-[TBD IMG]
+![Hyperparameter search — Learning rate and discount factor — Keeping ε-decay constant at 0.99941](https://github.com/svpino/lunar-lander/images/chart1.png)
 
 The three values explored for the discount factor γ were 0.9, 0.99, and 0.999. The discount factor indicates the ability of the agent to credit success to actions that will happen far in the future. A small value like γ = 0.9 will prevent the agent from properly crediting success after 10 steps in the future (1/(1-γ) = 1/(1-0.9) = 10) while a large value like γ = 0.999 will allow the agent to look all the way to 1,000 actions in the future (1/(1-γ) = 1/(1-0.999) = 1000). Since every episode of the implemented agent has a limit of 1,000 steps before being forcibly terminated, the grid search includes 0.9 to evaluate a myopic agent, 0.999 to evaluate a far-sighted agent, and 0.99 as a moderate value in between.
 
