@@ -100,11 +100,11 @@ There are other parameters necessary to make the lander work successfully. Due t
 ## Agent results
 Here is a look at the individual reward obtained by our agent while training using the best set of hyperparameters selected from the previous experiments. The accumulated reward is also displayed for context:
 
-[TBD IMG]
+![Rewards per training episode — Using α=.0001, γ=.99, and ε = 0.99941](https://github.com/svpino/lunar-lander/blob/master/images/chart3.png)
 
 Notice how the behavior of the agent is very erratic during the first three thousand iterations, but as it gets closer to the end, it becomes less intermittent because it starts exploiting what it has learned.
 
-[TBD IMG]
+![Reward obtained when testing the agent using the learned weights during 100 episodes — Using α=.0001, γ=.99, and ε = 0.99941](https://github.com/svpino/lunar-lander/blob/master/images/chart4.png)
 
 Finally, the above chart shows the results obtained by the agent after training is complete. In this case, the agent was run three times, and the individual episode reward was plotted. Notice how no crashes happened during the 100 episodes for any of the runs indicating the training process was successful and our agent solved the environment. The average reward for each run, as shown in the legend of the chart, was 209, 213, and 216.
 
