@@ -86,7 +86,7 @@ Looking at the discount factor, a value of 0.9 didn't lead to successful results
 
 With the best combination of learning rate and discount factor selected, an exploration of different values of ε-decay was performed. Besides the default value selected of 0.99941 —which offered 99.95% exploitation and 0.05% exploration by the end of training—, four more values were tested: 0.99910 (99.99% - 0.01%), 0.99954 (99.90% - 0.10%), 0.99973 (99.75% - 0.25%), and 0.99987 (99.50% - 0.50%). Here are the results:
 
-[TBD IMG]
+![Hyperparameter search — Epsilon decay — Keeping the learning rate and discount factor constant at α=.0001 and γ=.99](https://github.com/svpino/lunar-lander/blob/master/images/chart2.png)
 
 Notice that for larger values of ε-decay, the agent doesn't use what has learned frequently enough, so it's always exploring and doesn't take advantage of what it learns. For ε-decay = 0.99910 the agent quickly resorts to exploiting what it's learned but gets stuck because it can't explore other ways to increase its reward. The best result was using the initial value of 0.99941, which offers the right balance of exploration versus exploitation for the agent to uncover the entire state space.
 
