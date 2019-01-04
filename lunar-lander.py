@@ -30,7 +30,7 @@ REPLAY_BUFFER_BATCH_SIZE = 32
 MINIMUM_REWARD = -250
 STATE_SIZE = 8
 NUMBER_OF_ACTIONS = 4
-WEIGHTS_FILENAME = './weights.h5'
+WEIGHTS_FILENAME = './weights/weights.h5'
 
 class Agent:
 	def __init__(self, training, learning_rate, discount_factor, epsilon_decay):

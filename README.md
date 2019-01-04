@@ -4,22 +4,22 @@
 
 In order to run the code, you need to install the following:
 
-* Python 3
+* [Python 3](https://www.python.org/downloads/)
 * [NumPy](http://www.numpy.org/) 
 * [TensorFlow](https://www.tensorflow.org/) 
 * [OpenAI Gym](https://gym.openai.com/)
 
-Specific instructions for each one of the above requirements can be found in their respective websites so I'll spare you any unnecessary details.
+Specific instructions for each one of the above requirements can be found in their respective websites so I'll spare you any unnecessary details. 
 
-To run the code, execute the following command:
+After your computer is ready, to run the code, execute the following command:
 
 ```
 $ python3 lunar-lander.py
 ```
 
-You can run the code in training or testing mode. To train the agent, make sure the `TRAINING` constant is set to `True`. Setting the `TRAINING` constant to `False` will run the simulator using the previously saved weights. I included as part of this repository a set of weights that can be used to test the agent without needing to train it first.
+You can run the code in training or testing mode. To train the agent, make sure the `TRAINING` constant is set to `True` (just modify the code -up top in the file you'll find the constant). Setting the `TRAINING` constant to `False` will run the simulator using the previously saved weights. I included as part of this repository a set of weights that can be used to test the agent without needing to train it first (inside the `/weights` folder). By default, the code is configured to run in testing mode using the saved weights.
 
-The output will display the episode number, the reward obtained on the current episode, the accumulated reward over the last 100 episodes, and the current value of epsilon:
+The output of the simulator displays the episode number, the reward obtained on the current episode, the accumulated reward over the last 100 episodes, and the current value of epsilon. Here is an example of what this looks like:
 
 ```
 Alpha: 0.0001 Gamma: 0.990 Epsilon 0.99941
@@ -53,7 +53,9 @@ You can determine which values for these hyperparameters to use for your experim
 agent = Agent(training, LEARNING_RATE[2], DISCOUNT_FACTOR[1], EPSILON_DECAY[1])
 ```
 
-## Introduction
+Feel free to change these values or include your own. Whatever it takes to make things run better.
+
+## Analysis
 Here is an implementation of a reinforcement learning agent that solves the OpenAI Gym’s Lunar Lander environment. This environment consists of a lander that, by learning how to control 4 different actions, has to land safely on a landing pad with both legs touching the ground. A successfully trained agent should be able to achieve a score equal to or above 200 on average over 100 consecutive runs.
 
 I'm using an implementation of a Deep Q-Network (DQN) to solve the Lunar Lander environment. This implementation is inspired in the DQN described in (Mnih et al., 2015) where it was used to solve classic Atari 2600 games. Below I'm exploring the different decisions to construct a successful implementation, how some of the hyperparameters were selected, and the overall results obtained by the trained agent.
