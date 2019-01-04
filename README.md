@@ -37,7 +37,7 @@ Alpha: 0.0001 Gamma: 0.990 Epsilon 0.99941
 ...
 ```
 
-## Hyperparameters
+## Hyperparameters in the source code
 
 The specific values for the hyperparameters that I explored during the implementation of the simulator are set up in the source code. Here are the more important ones:
 
