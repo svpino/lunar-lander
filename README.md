@@ -1,4 +1,4 @@
-# OpenAI Gym's Lunar Lander Implementation
+# OpenAI Gym's LunarLander-v2 Implementation
 
 ## Requirements
 
