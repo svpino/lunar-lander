@@ -2,18 +2,21 @@
 
 ## Requirements
 
-In order to run the code, you need to install the following:
+In order to run the code, you need Python3 and the following libraries:
 
-* [Python 3](https://www.python.org/downloads/)
 * [NumPy](http://www.numpy.org/) 
 * [TensorFlow](https://www.tensorflow.org/) 
 * [OpenAI Gym](https://gym.openai.com/)
 
-Specific instructions for each one of the above requirements can be found in their respective websites so I'll spare you any unnecessary details. 
+To install them all, make sure you activate a virtual environment and then run the following command:
+
+```shell
+$ pip install numpy tensorflow gym
+```
 
 After your computer is ready, to run the code, execute the following command:
 
-```
+```shell
 $ python3 lunar-lander.py
 ```
 
