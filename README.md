@@ -5,7 +5,7 @@
 In order to run the code, you need Python3 and the following libraries:
 
 * [NumPy](http://www.numpy.org/) 
-* [TensorFlow 2.x](https://www.tensorflow.org/) 
+* [TensorFlow](https://www.tensorflow.org/) 
 * [OpenAI Gym](https://gym.openai.com/)
 
 To install them all, make sure you activate a virtual environment and then run the following commands:
