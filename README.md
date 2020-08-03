@@ -5,13 +5,14 @@
 In order to run the code, you need Python3 and the following libraries:
 
 * [NumPy](http://www.numpy.org/) 
-* [TensorFlow](https://www.tensorflow.org/) 
+* [TensorFlow 2.x](https://www.tensorflow.org/) 
 * [OpenAI Gym](https://gym.openai.com/)
 
-To install them all, make sure you activate a virtual environment and then run the following command:
+To install them all, make sure you activate a virtual environment and then run the following commands:
 
 ```shell
 $ pip install numpy tensorflow gym
+$ pip install Box2D
 ```
 
 After your computer is ready, to run the code, execute the following command:
